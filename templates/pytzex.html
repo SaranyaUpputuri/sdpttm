@@ -1,0 +1,36 @@
+{% extends 'Navbar.html' %}
+{% load static %}
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print to Console</title>
+</head>
+<body>
+{% block body %}
+<div class="container text-center">
+  <div class="row">
+    <div class="col order-last">
+      <h1>Top Vacations</h1>
+        <br><br><h1>Current time:</h1></br></br>
+    </div>
+    <div class="col">
+      <h1>Welcome to Saranya's Travel Tourism and Management</h1>
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Select Country
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Asia/Kolkata</a></li>
+    <li><a class="dropdown-item" href="#">Asia/Oral</a></li>
+    <li><a class="dropdown-item" href="#">Australia/Victoria</a></li>
+  </ul>
+</div>
+        <br><h1>{{ result_str }}</h1>
+<button type="button" class="btn btn-success">Check the current time of the location</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+</body>
+</html>
